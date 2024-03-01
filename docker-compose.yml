@@ -24,3 +24,7 @@ services:
 networks:
   terra-classic:
     driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.22.0.1/16
